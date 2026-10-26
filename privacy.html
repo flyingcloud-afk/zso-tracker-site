@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Политика конфиденциальности — ЗСО Трекер</title>
+  <style>
+    body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.55; color: #222; }
+    code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 32px 0; }
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← ЗСО Трекер</a></p>
+  <h1>Политика конфиденциальности</h1>
+  <p>Дата последнего обновления: 26 октября 2026 г.</p>
+
+  <h2>Что это за приложение</h2>
+  <p>«ЗСО Трекер» — личный инструмент его автора (гидрогеолога) для ведения проектов зон санитарной охраны. Приложение запускается локально на компьютере владельца. Публичного сервера, регистрации и учётных записей других пользователей нет.</p>
+
+  <h2>Какие разрешения Google запрашиваются</h2>
+  <p>Приложение запрашивает один доступ Google (OAuth scope):</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/drive</code> — полный доступ к Google Drive владельца.</li>
+  </ul>
+  <p>Этот доступ нужен, чтобы создавать папки проектов, загружать, читать, переименовывать и перемещать файлы проектов в собственном Google Drive владельца. Приложение использует доступ только к Drive самого владельца и только для этих целей.</p>
+
+  <h2>Какие данные обрабатываются</h2>
+  <ul>
+    <li>Файлы проектов в Google Drive владельца (документы, PDF, таблицы) — читаются и записываются только в его Drive.</li>
+    <li>Метаданные и результаты разбора файлов хранятся в локальной базе данных на компьютере владельца.</li>
+    <li>Токены доступа Google хранятся только локально, на компьютере владельца, в файле, не передаваемом никому.</li>
+  </ul>
+
+  <h2>Передача данных третьим лицам</h2>
+  <p>Данные не продаются, не публикуются и не передаются третьим лицам для рекламы или иных коммерческих целей.</p>
+  <p>Исключения — сервисы, которые приложение вызывает по прямой необходимости работы:</p>
+  <ul>
+    <li><strong>API Anthropic (Claude).</strong> Тексты документов проектов (извлечённые из файлов Drive) отправляются в API Anthropic для классификации файлов и подготовки черновиков глав. Это происходит по действиям владельца в приложении. Обработка на стороне Anthropic регулируется условиями и политикой конфиденциальности Anthropic.</li>
+    <li><strong>Веб-поиск через API Anthropic.</strong> Для поиска справочных фактов (например, о районе или нормативных документах) используются поисковые запросы; в них содержатся названия мест и организаций, а не файлы.</li>
+    <li><strong>Геокодирование (Nominatim / OpenStreetMap).</strong> Для расчёта расстояний на сервис отправляются адреса и названия мест из проектов.</li>
+    <li><strong>Почта по IMAP (необязательно).</strong> Если владелец включит эту функцию, приложение читает письма из указанного им почтового ящика напрямую по протоколу IMAP с паролем, хранящимся локально. Это не относится к доступам Google, перечисленным выше.</li>
+  </ul>
+
+  <h2>Хранение и безопасность</h2>
+  <p>Данные и токены хранятся локально на компьютере владельца и не загружаются на сервер приложения (такого сервера нет). Защита этого компьютера — ответственность владельца.</p>
+
+  <h2>Как отозвать доступ</h2>
+  <p>Доступ приложения к аккаунту Google можно в любой момент отозвать на странице <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>: выберите приложение и нажмите «Удалить доступ». Локальные данные можно удалить, стерев папки <code>data/</code> и <code>credentials/</code> приложения.</p>
+
+  <h2>Контакт</h2>
+  <p>По вопросам конфиденциальности: <a href="mailto:victor.flyingcloud@gmail.com">victor.flyingcloud@gmail.com</a></p>
+
+  <hr>
+
+  <h1>Privacy Policy (English summary)</h1>
+  <p>Last updated: October 26, 2026.</p>
+  <p><strong>ZSO Tracker</strong> is a personal tool of its author (a hydrogeologist) for managing sanitary protection zone projects. It runs locally on the owner's computer. There is no public server and no accounts for other users.</p>
+  <p><strong>Google permissions.</strong> The app requests one OAuth scope: <code>https://www.googleapis.com/auth/drive</code> (full access to the owner's Google Drive). It is used only to create folders and to read, write, rename and move project files in the owner's own Drive.</p>
+  <p><strong>Data handling.</strong> Project files are read and written only in the owner's Google Drive. Metadata and analysis results are stored in a local database on the owner's computer. Google access tokens are stored locally only.</p>
+  <p><strong>Sharing.</strong> Data is not sold and not shared with third parties for advertising or commercial purposes. Exceptions, necessary for the app to work: (1) text extracted from project documents is sent to the Anthropic (Claude) API for file classification and chapter drafting, subject to Anthropic's terms and privacy policy; (2) web-search queries made via the Anthropic API contain place and organization names, not files; (3) addresses and place names are sent to Nominatim (OpenStreetMap) for geocoding; (4) optionally, if the owner enables it, a mailbox is read over IMAP with locally stored credentials (separate from Google access).</p>
+  <p><strong>Revoking access.</strong> You can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Local data can be removed by deleting the app's local <code>data/</code> and <code>credentials/</code> folders.</p>
+  <p><strong>Contact.</strong> <a href="mailto:victor.flyingcloud@gmail.com">victor.flyingcloud@gmail.com</a></p>
+</body>
+</html>
